@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto CalmaMente</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container-principal">
+            <div class="caixa-titulo">
+                <h1 class="texto-successo">Área Restrita</h1>
+            </div>
+            <div class="caixa-imagem">
+                <img src="imagens/api-login.jpg" width="400" alt="de um spliz um daschound e um dalmata">
+            </div>
+            <div class="caixa-autenticacao">
+                <form id="formulario-login">
+                    <label for="login" class="label-formulario">E-mail:</label>
+                    <input type="email" class="controle-formulario" id="login" name="login" autofocus autocomplete="email" required>
+
+                    <div class="container-senha">
+                        <label for="senha" class="label-formulario">Senha:</label>
+                        
+                        <div class="password-field">
+                            <input type="password" class="controle-formulario" id="senha" name="senha" required />
+                            <img id="alternar-senha3" class="alternar-senha" src="imagens/olho-fechado.png" alt="Mostrar Senha" title="Mostrar Senha">
+                        </div>
+                    </div>                    
+                    <button id="menuButton" type="submit" class="botao">Acesse</button>
+                </form>
+            </div>
+            <div class="caixa-links">
+                <a href="usuarios.html">Cadastre-se!</a>    
+            </div>
+        </div>
+        <div class="modal fade" id="modalMensagem" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel">CalmaMente diz:</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p id="mensagem"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; CalmaMente - Fatec Votorantim - Todos os direitos reservados
+    </footer>
+    <!-- jQuery e Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Scripts -->
+    <script src="js/validaToken.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
